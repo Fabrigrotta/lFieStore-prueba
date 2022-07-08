@@ -109,3 +109,12 @@ const renderCarrito = (producto) => {
 
 // -------------------> Función para eliminar del carrito <-------------------
 
+// const eliminarProd = (producto) =>{
+//     contenedorCarrito.addEventListener("click", (e) => {
+//         if (e.target.classList.contains("btn-eliminarProd")) {
+//             const productoAlCarrito = productos.reduce( (producto) => producto.id === productoId );
+//         }
+//     })
+// }
+
+// console.log(btn-eliminarProd);
