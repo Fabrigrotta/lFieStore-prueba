@@ -82,8 +82,6 @@ contenedorProductos.addEventListener("click", () => {
 })
 
 
-console.log(btnCompra);
-
 // Crear una función que se llame renderCarrito
 
 const renderCarrito = (producto) => {
