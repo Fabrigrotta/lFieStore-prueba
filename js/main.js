@@ -57,28 +57,23 @@ import { productos } from "./data.js";
 
 
 // -------------------> Función para agregar productos al carrito <-------------------
+// -------------------> Toastify boton de comprar <-------------------
 
 contenedorProductos.addEventListener("click", (e) => {
     if (e.target.classList.contains("alCarrito")) {
         const productoId = Number(e.target.value);
         const productoAlCarrito = productos.find( (producto) => producto.id === productoId );
         renderCarrito(productoAlCarrito);
+        Toastify({
+            text: "Añadiste un (1) producto al carrito",
+            duration: 3000,
+            position: "right",
+            gravity: "bottom",
+            style: {
+            background: "linear-gradient(to right, #ff523b, #ffcbc4)",
+            }
+        }).showToast();
     }
-})
-
-
-// -------------------> Toastify boton de comprar <-------------------
-
-contenedorProductos.addEventListener("click", () => {
-    Toastify({
-        text: "Añadiste un (1) producto al carrito",
-        duration: 3000,
-        position: "right",
-        gravity: "bottom",
-        style: {
-        background: "linear-gradient(to right, #ff523b, #ffcbc4)",
-        }
-    }).showToast();
 })
 
 
